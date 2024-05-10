@@ -1,4 +1,4 @@
-name: My first Workflow
+name: Cowsay Workflow
 
 on: push
 
