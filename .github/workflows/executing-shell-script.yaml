@@ -14,7 +14,9 @@ jobs:
               run: ls -ltrah
 
             - name: Executing Shell Script (Install cowsay cmd)
-              run: ./ascii-script.sh
+              run: |
+                chmod +x ascii-script.sh
+                ./ascii-script.sh
               
 
               
