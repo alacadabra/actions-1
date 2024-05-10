@@ -26,22 +26,5 @@ jobs:
               run: ls -ltrah
               
 
-            # - name: List and Read File
-            #   run: |
-            #     echo "My first Github Actions Job"
-            #     ls -lhrta
-            #     cat README.md
-
-            - name: Generate ASCII Art
-              
-
-
-            # - name: List files
-            #   run: ls
-
-            # - name: Read file
-            #   run: cat README.md
-
-
 
 
