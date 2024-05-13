@@ -1,0 +1,39 @@
+name: Generate ASCII Artwork
+
+on: push
+
+jobs:
+    build-job-1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Install Cowsay Program
+              run: sudo apt-get install -y cowsay
+
+            - name: Execute cowsay cmd
+              run: cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt
+
+            - name: Sleep for 30 seconds
+              run: sleep 30
+
+    test-job-2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Sleep for 10 seconds
+              run: sleep 30
+
+            - name: Test file exists
+              run: grep -i "dragon" dragon.txt
+
+    deploy-job-3:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Read file
+              run: cat dragon.txt
+
+            - name: Checkout repo files
+              run: ls -ltrah
+
+            - name: Deploy
+              run: echo Deploying
+
+
